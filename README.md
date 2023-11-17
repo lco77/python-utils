@@ -10,7 +10,7 @@ Each boilerplate should meet the following requirements:
 - a simple working example in __main__
 
 # cisco-vmanage.py
-Interact with Infoblox GRID master API
+Interact with Cisco vManage API
 
 Class instantiation:
 - Infoblox(hostname, username, password)
@@ -19,17 +19,30 @@ Input parameters:
 - hostname
 - username
 - password
+
+External dependencies:
+- requests
+
+Public methods:
+- getDevices()
 
 # cisco-vmanage-async.py
-Interact with Infoblox GRID master API (ASYNC version)
+Interact with Cisco vManage API (ASYNC version)
 
 Class instantiation:
-- Infoblox(hostname, username, password)
+- Vmanage(hostname, username, password)
 
 Input parameters:
 - hostname
 - username
 - password
+
+External dependencies:
+- asyncio
+- httpx
+
+Public methods:
+- getDevices()
 
 # infoblox-grid.py
 Interact with Infoblox GRID master API
